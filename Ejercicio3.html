@@ -6,13 +6,68 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h1>Información Personal</h1>
+    
     <form>
+        <fieldset>
+
+        <legend>Información Personal</legend>
+
         <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name"><br>
+        <input type="text" id="name" name="name" required><br>
+       
         <label for="surname">Apellido:</label><br>
-        <input type="text" id="surname" name="surname"><br>
+        <input type="text" id="surname" name="surname" required><br>
+    
+        <label for="nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="nacimiento" name="nacimiento" required><br>
         
+
+        <label for="genero">Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino" required>
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="otro" required>
+        <label for="otro">Otro</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <label for="direccion">Dirección:</label><br>
+        <textarea id="direccion" name="direccion" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de cuenta</legend>
+            <label for="usuario">Nombre de Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" required><br>
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" id="contrasena" name="contrasena" required><br>
+        <label for="contrasenaconf">Confirmar Contraseña:</label><br>
+        <input type="password" id="contrasenaconf" name="contrasenaconf" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label for="color">Color Favorito:</label>
+           <select id="color" name="color" required>
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarillo">Amarillo</option>
+                 </select><br>
+
+            <label for="terminos">Acepto los términos y condiciones</label>
+            <input type="checkbox" id="terminos" name="terminos" required><br>
+          
+        </fieldset>
+
     </form>
     
 </body>
