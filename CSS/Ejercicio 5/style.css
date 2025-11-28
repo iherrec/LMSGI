@@ -1,3 +1,10 @@
+:root  {
+    --menu-color: rgb(226, 189, 144);;
+    --menu-font-color: saddlebrown;
+    --footer-color: black;
+    --background-color: #264653;
+    --text-color: #ffffff;
+}
 *{
     margin:0;
     padding:5px 5px 5px 5px;
@@ -5,7 +12,28 @@
     border-radius: 5px;
     
 }
-
+nav {
+            display:flex;
+            justify-content: flex-end;
+            background-color: saddlebrown;
+}
+.nav-list{
+            display:flex;
+            list-style:none;
+            gap: 8px;
+        }
+        .nav-list a{
+            text-decoration: none;
+            color:whitesmoke;
+            font: size 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .nav-list a:hover{
+            background-color: whitesmoke;
+            color:sienna;
+        }
+        
 #menu-section .section-tittle{
     text-align: center;
     font-size: 2 rem;
@@ -17,8 +45,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 110px;
-    background-color:bisque;
-    color:saddlebrown;
+    background-color:var(--menu-color);
+    color:var(--menu-font-color);
 }
 
 #menu-section .menu-list .menu-item{
@@ -35,10 +63,25 @@
     border-radius: 30px;
 
 }
-
-#footer .footer-div{
-    display:flex;
+#footer {
+    border-radius: 30px;
+    display: flex;  
+    background-color: var(--footer-color);
+    color: antiquewhite;
     justify-content: space-between;
+}
+#footer .footer-div {
+    border-radius: 30px;
+    display: flex;  
+    background-color: var(--footer-color);
+    color: antiquewhite;
+    justify-content: space-between;
+    gap: 20px;
+    
+    
+}
+#footer .footer-div p{
+    align-items: left; 
     background-color: black;
     color: antiquewhite;
     
@@ -46,5 +89,7 @@
 
 #footer .footer-div a{
     text-decoration: none;
-    color: aliceblue;
+    color: antiquewhite;
+    align-items: right; 
+    justify-content: right;   
 }
