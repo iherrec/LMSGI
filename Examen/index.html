@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iván">
+    <meta name="description" content="Página de una cafetería que ofrece desayunos">
+    <meta name="keyword" content="Café, cafetería, desayunos, oferta, tostadas">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Iván Hernández Recio</title>
+</head>
+
+<body>
+<!--Menú de navegación dentro del header-->
+    <header>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+</header> 
+<hr>
+<!--------Main con todas las secciones---------------->
+<main>
+    <!---------------Sección Home------------>
+    <section id="Home">
+        <div style="left: auto">
+        <h3>Best Coffee</h3>
+        <h4>Make your day great with our special coffee</h4>
+        <p>Welcome to our coffee paradise, where every bean tells a story a every cup sparks joy.</p>
+        <button id="order">Order now</button>
+        <button id="contactus">Contact us</button>
+        </div>
+    <!--Imagen de la sección Home-->
+        <div style="right: auto">
+        <img src="images/coffee-hero-section.png" alt="Imagen de taza con café" width="300" heigh="300">
+        </div>
+    </section>
+
+    <!--------------Sección About us------------>
+    <!--Foto de la sección-->
+    <section id="About">
+        <div>
+            <img src="images/about-image.jpg" alt="Imagen de la sección About us" height="200" width="300">
+        </div>
+    <!--Texto de la sección-->
+        <div>
+            <h3 id=>About us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere nemo pariatur veniam tempora quibusdam ea tenetur, laborum provident fuga modi dolorem aperiam sapiente minima aliquid quisquam similique officia consectetur accusantium?</p>
+        </div>
+    </section>
+<hr>
+<!--------------------Sección Gallery------------->
+    <section id="Gallery">
+        <h3>Gallery</h3>
+        <img src="images/gallery-1.jpg" alt="Imagen de la galería 1" height="100">
+        <img src="images/gallery-2.jpg" alt="Imagen de la galería 2" height="100">
+        <img src="images/gallery-3.jpg" alt="Imagen de la galería 3" height="100">
+    </section>
+<hr>
+<!-------------Sección Contact us------------->
+    <section id="Contact">
+        <h3>Contact us</h3>
+        <div>
+            <p>123 Campsite Avenue, CA 8949</p>
+            <p>9589415321</p>
+            <p>Monday-Friday: 9:00 AM - 5:00 PM</p>
+            <p>Sunday: Closed</p>
+            <p>www.ieszaiohsado.org</p>
+        </div>
+        <!---------Formulario------------>
+        <div>
+            <form>
+                <fieldset>
+                    
+                    <label for="nombre">Your name</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</main>
+<hr>
+<!-------Footer con las políticas------->
+<footer>
+    <div>
+        <p>2025 Coffee Shop</p>
+        <a href="#">Privacy policy</a>
+        <a href="#">Refund policy</a>
+    </div>
+</footer>
+</body>
+</html>
