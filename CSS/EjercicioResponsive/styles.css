@@ -65,7 +65,7 @@ nav ul a:hover{
 .cta-container {
     background-color: #e9ecef;
     text-align: center;
-    padding: 110px 110px;
+    padding: 110px 110px;;
 }
 
 .cta-container h1 {
@@ -80,16 +80,44 @@ nav ul a:hover{
     margin: auto;
 }
 
-.services-container {
+.services-container{
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color:#f1f3f5;
     padding: 34px 34px;
     text-align: center;
+    gap: 20px;
 }
 .services-item {
     width: 30%;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+.service-icon {
+    size: 2em;
+    bottom: 15px;
+}
 
+.services-item h3, p {
+    padding-top: 10px;
+}
+
+/* ========== CONTACT ========== */
+
+.contact-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form {
+    display: flex;
+}
+   
 
