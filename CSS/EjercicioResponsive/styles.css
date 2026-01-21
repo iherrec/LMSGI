@@ -118,6 +118,47 @@ nav ul a:hover{
 
 .contact-form {
     display: flex;
-}
-   
+    flex-direction: column;
+    align-items: left;
+    max-width: 500px;
+    padding: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+    font-weight: bold;
 
+}
+
+.contact-container textarea,
+.contact-container input {
+    border: none;
+    border-bottom: 5px solid;
+    background-color: #f1f3f5;
+    padding: 20px;
+}
+
+.contact-container input[name="name"] {
+    border-bottom-color: #32cd32;
+} 
+
+.contact-container input[name="email"] {
+    border-bottom-color: #8a2be2;
+}
+
+.contact-container textarea {
+    border-bottom-color: #ffd747;
+}
+
+.contact-container textarea:hover,
+.contact-container input:hover {
+    background-color: #343a40;
+    border-bottom-color: #007bff;
+
+}
+
+.contact-container button {
+    padding: 20px;
+    background-color: #007bff;
+    color: #e9ecef;
+    font-size: medium;
+    border-radius: 2px;
+}
