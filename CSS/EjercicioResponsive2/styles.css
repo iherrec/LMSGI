@@ -10,3 +10,91 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-blue);
+    color: var(--background-light);
+}
+
+header a:hover,
+footer a:hover {
+    color: var(--hover-light);
+    cursor: pointer;
+}
+
+input:focus {
+    border-radius: 4px;
+}
+
+nav .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--hover-light);
+}
+.menu a {
+    text-decoration: none;
+    color: var(--background-light);
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+
+.cta-container {
+    display: flex;
+    background-image: url(img/gato\ fondo.jpg);
+
+}
+   
+.cta-container img { 
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: fixed;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}        
+
+.footer-copy {
+    background-color: var(--primary-blue);
+    text-align: center;
+    padding: 20px 0;
+    color: var(--background-light);
+}
+
+.footer-menu {
+    background-color: var(--dark-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    
+}
+.footer-menu div {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-menu h3 {
+    color: var(--hover-light);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--background-light);
+}
+
+
+
