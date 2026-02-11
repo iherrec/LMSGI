@@ -13,10 +13,11 @@
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--primary-blue);
     color: var(--background-light);
+   
 }
 
 header a:hover,
@@ -25,9 +26,6 @@ footer a:hover {
     cursor: pointer;
 }
 
-input:focus {
-    border-radius: 4px;
-}
 
 nav .menu {
     list-style-type: none;
@@ -41,22 +39,27 @@ nav .menu {
     color: var(--background-light);
 }
 
+.search button{
+    background: none;
+    text-decoration: none;
+    border:none;
+    color: var(--hover-light);
+    font-size: 30px;
+}
+
 .logo:hover{
     transform: rotate(360deg);
 }
 
 
 .cta-container {
-    display: flex;
     background-image: url(img/gato\ fondo.jpg);
-
-}
-   
-.cta-container img { 
-    background-position: center center;
+    text-align: center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background: fixed;
+    height: 400px;
+    width: 100%;
 }
 
 footer {
@@ -96,5 +99,32 @@ footer a {
     color: var(--background-light);
 }
 
+@media (max-width: 800px) {
+    header{
+        justify-content: space-around;
+    }
+
+    header .logo{
+        justify-content: space-around;
+    }
 
 
+    header nav{
+        display: none;
+    }
+    
+    header .busqueda{
+        display: none;
+    }
+
+    header .search{
+        display: block;
+        justify-content: center;
+    }
+
+ 
+    footer div {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

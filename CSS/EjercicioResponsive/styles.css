@@ -16,6 +16,11 @@ nav {
     border: 3px;
 }
 
+nav button{
+    display: none;
+    border: none;
+}
+
 .logo {
     size: 1.6em;
     text-decoration: none;
@@ -80,9 +85,9 @@ nav ul a:hover{
     margin: auto;
 }
 
-.services-container{
+.services-container {
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color:#f1f3f5;
     padding: 34px 34px;
     text-align: center;
@@ -161,4 +166,17 @@ nav ul a:hover{
     color: #e9ecef;
     font-size: medium;
     border-radius: 2px;
+}
+
+@media (max-width: 800px) {
+    nav ul{
+        display: none;
+    }
+
+    nav button{
+        display:block;
+    }
+    .services-container{
+        flex-direction: column;
+    }
 }
