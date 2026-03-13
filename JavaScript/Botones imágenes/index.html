@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+function addclass(){ 
+    document.getElementById("micontenedor").classList.add("miclase");
+}
+    </script>
 </head>
 <body>
     <div id="container">
@@ -16,5 +22,8 @@
     <button id="b2">2</button>
     <button id="b3">3</button>
     <script src = "script2.js"></script>
+
+    <div id="micontenedor"></div>>
+    <button onclick="addclass()">Añadir clase</button>
 </body>
 </html>
