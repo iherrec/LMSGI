@@ -28,4 +28,7 @@ const input = document.getElementById("tareaInput");
 
             liTarea.appendChild(botonBorrar);
             lista.appendChild(liTarea);
+            // También se puede usar:
+            // function borrar() {
+            // this.parentElement.remove();}
         }
